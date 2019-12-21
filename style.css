@@ -1,0 +1,231 @@
+:root {
+  --teal-bold: #6dbbad;
+  --blue-italic: #6587a4;
+  --green-bold: #00e689;
+}
+
+/* TEXT & TYPOGRAPHY SETTINGS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.teal-bold {
+  color: var(--teal-bold);
+  font-weight: 900;
+}
+
+.blue-italic {
+  color: var(--blue-italic);
+  font-style: italic;
+}
+
+.green-bold {
+  color: var(--green-bold);
+  font-weight: 900;
+}
+
+a {
+    box-shadow: inset 0 -1px 0 -1px #00e689;
+    transition: box-shadow .15s ease-in-out;
+    line-height: 0.5em;
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 8px solid #00e689;
+    padding: 0;
+    display: inline-block;
+}
+
+a:hover {
+    box-shadow: inset 0 -1em 0 -3px #00e689;
+}
+
+
+/* PAGE FORMAT & LAYOUT */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ROW 1 - Hi I'm Michael... */
+.left1 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.right1 {
+  display: flex;
+  height: 100vh;
+  justify-content: left;
+  align-items: center;
+  word-wrap: break-word;
+  width: 25vw;
+  font-size: 2.5em;
+}
+
+/* ROW 2 - I'm a front end web dev... */
+.left2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-all;
+  text-align: right;
+  width: 25vw;
+  font-size: 2.5em;
+}
+
+.right2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ROW 3 - I mostly work with... */
+.left3 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.right3 {
+  display: flex;
+  height: 100vh;
+  justify-content: left;
+  align-items: center;
+  word-wrap: break-word;
+  text-align: left;
+  width: 25vw;
+  font-size: 2.5em;
+}
+
+/* ROW 4 - Here, have a look... */
+.left4 {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-all;
+    text-align: right;
+    width: 25vw;
+    font-size: 2.5em;
+  }
+  
+  .right4 {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* ROW 5 - Get in touch */
+.contact {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100vw;
+    font-size: 2.5em;
+    margin: 0 5em 0 5em;
+}
+
+/* ROW 6 - Contact Form */
+
+/* MAKING PHOTOS RESPONSIVE */
+img.responsive-pic {
+  width: 100%;
+  max-width: 30em;
+  height: auto;
+}
+
+/* POLAROID IMAGE EFFECTS */
+#portrait {
+    border: 1px solid lightgray;
+    background-color: rgb(253, 252, 246);
+    padding: 15px 15px 65px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    transform: rotate(-5deg);
+    transition: all 0.5s ease-in-out 0s;
+    filter: grayscale(80%);
+}
+
+#portrait:hover {
+    cursor: default;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out 0s;
+    filter: grayscale(0%);
+}
+
+#planning {
+    border: 1px solid lightgray;
+    background-color: rgb(253, 252, 246);
+    padding: 15px 15px 65px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    transform: rotate(3deg);
+    transition: all 0.5s ease-in-out 0s;
+    filter: grayscale(80%);
+}
+
+#planning:hover {
+    cursor: default;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out 0s;
+    filter: grayscale(0%);
+}
+
+#working {
+    border: 1px solid lightgray;
+    background-color: rgb(253, 252, 246);
+    padding: 15px 15px 65px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    transform: rotate(-2.5deg);
+    transition: all 0.5s ease-in-out 0s;
+    filter: grayscale(80%);
+}
+
+#working:hover {
+    cursor: default;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out 0s;
+    filter: grayscale(0%);
+}
+
+#portfolio {
+    border: 1px solid lightgray;
+    background-color: rgb(253, 252, 246);
+    padding: 15px 15px 65px 15px;
+    box-shadow: 5px 10px 10px darkgrey;
+    transform: rotate(2.5deg);
+    transition: all 0.5s ease-in-out 0s;
+    filter: grayscale(80%);
+}
+
+#portfolio:hover {
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: all 0.1s ease-in-out 0s;
+    filter: grayscale(0%);
+}
